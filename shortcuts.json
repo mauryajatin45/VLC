@@ -1,0 +1,11 @@
+{
+    "ArrowUp": "Increase volume by 10%",
+    "ArrowDown": "Decrease volume by 10%",
+    "ArrowLeft": "Seek backward by 5 seconds",
+    "ArrowRight": "Seek forward by 5 seconds",
+    "o": "Open a video file",
+    "Empty Space (' ') ": "Play or pause the video",
+    "f": "Toggle fullscreen mode",
+    "Mouse Wheel (over video)": "Adjust volume (scroll up to increase, scroll down to decrease)",
+    "Mouse Wheel (over seek bar)": "Seek video (scroll up to rewind, scroll down to fast forward)"
+}

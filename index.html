@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VLC media Player</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="icon" href="./VLC.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="title-bar">
+      <img src="./VLC.png" alt="VlC Image" class="title-image" />
+      <h1 class="title-text">VLC media player</h1>
+    </div>
+    <div class="menu-bar">
+      <div class="menu">
+        <div class="menu-btn" id="video-btn">Open</div>
+        <input type="file" class="video-input" id="videoOpen" accept="video/*" />
+      </div>
+      <div class="menu">
+        <div class="menu-btn">
+          Playback
+          <ul class="menu-items" type="none">
+            <li id="speedUp">Speed Up</li>
+            <li id="speedDown">Speed Down</li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="menu-btn">
+          Audio
+          <ul class="menu-items" type="none">
+            <li id="volumeUp">Volume Up</li>
+            <li id="volumeDown">Volume Down</li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="menu-btn">
+          Help
+          <ul class="menu-items" type="none">
+            <li id="menu-shortcut">Shortcuts</li>
+            <li id="menu-about">About</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <p class="video-name"></p>
+    <p class="toast-name"></p>
+    <div class="Main-Toast">
+      <div class="shortcuts">
+        <div class="shortcuts-head">
+          <h3>Shortcuts</h3>
+          <i class="fa-solid fa-xmark close"></i>
+        </div>
+        <div class="shortcuts-body">
+          <div class="leftside"></div>
+          <div class="rightside"></div>
+        </div>
+      </div>
+    </div>
+    <div class="Main-Toast-2">
+      <div class="about">
+        <div class="shortcuts-head-2">
+          <h3>About VLC Media Player Web Clone</h3>
+          <i class="fa-solid fa-xmark close"></i>
+        </div>
+        <div class="shortcuts-body-2">
+          <p>
+            <strong>VLC Media Player Web Clone</strong> is a lightweight, modern web-based video player inspired by the popular VLC Media Player.
+            This project allows users to upload and play video files directly in their browser with essential playback controls, such as play/pause,
+            volume adjustment, playback speed, seek controls, and fullscreen mode.
+          </p>
+    
+          <p>
+            The application is designed to provide a seamless, intuitive video playback experience using JavaScript, HTML5, and CSS3. It also includes
+            customizable keyboard shortcuts, allowing users to easily control playback through their preferred input method.
+          </p>
+    
+          <p><strong>Key Features:</strong></p>
+          <ul id="features">
+            <li class="features-li">
+              Upload and play video files directly from your device.
+            </li>
+            <li class="features-li">
+              Basic playback controls (Play/Pause, Volume, Speed, Seek).
+            </li>
+            <li class="features-li">
+              Fullscreen mode for an immersive experience.
+            </li>
+            <li class="features-li">
+              Keyboard and mouse shortcuts for easy navigation.
+            </li>
+            <li class="features-li">
+              Drag-and-drop support for video file uploads.
+            </li>
+          </ul>
+    
+          <p>
+            <strong>Technologies Used:</strong> HTML5, CSS3, JavaScript, Font Awesome
+          </p>
+    
+          <!-- GitHub Link Section -->
+          <p>
+            <strong>Want to contribute?</strong> Visit the project's GitHub repository:
+            <a href="https://github.com/your-username/vlc-web-clone" target="_blank">VLC Media Player Web Clone on GitHub</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+  <footer>
+    <div class="seeker">
+      <div class="current-time">--:--</div>
+      <input type="range" id="seekbar" min="0" max="100" value="0" />
+      <div class="video-time">--:--</div>
+    </div>
+    <div class="controller">
+      <div class="main-controls">
+        <i class="fa-solid fa-pause icons" id="pause" aria-label="Pause"></i>
+        <i class="fa-solid fa-play icons" id="play" aria-label="Play"></i>
+        <i class="fa-solid fa-backward iconss backward" aria-label="Rewind 5 seconds"></i>
+        <i class="fa-solid fa-stop iconss" aria-label="Stop"></i>
+        <i class="fa-solid fa-forward iconss forward" aria-label="Fast forward 5 seconds"></i>
+      </div>
+      <div class="extra-controls">
+        <i class="fa-solid fa-volume-high iconss" id="mute" aria-label="Mute"></i>
+        <i class="fa-solid fa-expand iconss" id="fullscreen" aria-label="Fullscreen"></i>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.9" aria-label="Volume control" />
+      </div>
+    </div>
+  </footer>
+  
+  <script src="app.js"></script>
+</body>
+
+</html>
