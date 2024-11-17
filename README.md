@@ -46,4 +46,4 @@ This project is a lightweight, modern web-based clone of the popular **VLC Media
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/vlc-web-clone.git
+   git clone https://github.com/mauryajatin45/VLC.git
