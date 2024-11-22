@@ -111,6 +111,23 @@ function setupVideoEvents() {
             }
         });
 
+        elements.volumeSlider.addEventListener('wheel', (e) => {
+            e.preventDefault(); // Prevent the page from scrolling when using the wheel on the slider.
+        
+            let change = 0; // The amount to adjust the volume by
+        
+            // Determine whether the user is scrolling up or down
+            if (e.deltaY > 0) {
+                change = -0.1; // Scroll down, decrease volume
+            } else if (e.deltaY < 0) {
+                change = 0.1; // Scroll up, increase volume
+            }
+        
+            // Call your adjustVolume function to adjust the volume by the calculated change
+            adjustVolume(change);
+        });
+
+
         // Event listener for seek adjustment using mouse wheel
         elements.seekBar.addEventListener('wheel', (e) => {
             if (e.deltaY > 0) {
